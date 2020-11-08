@@ -1,0 +1,131 @@
+:root {
+  --main : #794c74;
+  --secondary:#c56183;
+  --accent: #fadcaa;
+  --hint:#b2deec;
+}
+
+body {
+  background-color: var(--main);
+}
+
+input {
+  outline:none;
+  border:none;
+}
+
+#title, #author, #isbn {
+  background-color: #83527d;
+  border: none;
+  border-radius: 5px;
+  color: var(--hint);
+  text-transform: capitalize;
+  outline:none;
+}
+
+#title:focus, #author:focus, #isbn:focus {
+  background-color: #83527d;
+  border: 2px solid var(--hint);
+  color: var(--hint);
+  text-transform: capitalize;
+  outline:none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus{
+  -webkit-box-shadow:0 0 0 50px #83527d inset;
+  -webkit-text-fill-color: var(--hint);
+  text-transform:capitalize;
+  border: none;
+  outline:none;
+}
+
+
+
+td {
+  color: var(--hint);
+  text-transform: capitalize;
+}
+
+label {
+  padding-left: 10px;
+}
+th, label{
+  color:var(--accent);
+}
+
+td:last-child a {
+  color: var(--secondary);
+}
+
+td:nth-child(1){
+  padding-left: 10px;
+}
+
+tr:nth-child(even) {
+  background-color:#83527d;
+}
+
+th{
+  text-align: center;
+  border-bottom: 7px solid #83527d;
+  border-top: 7px solid #83527d;
+}
+
+td {
+  border-bottom:none
+}
+
+.success, .error {
+  color: white;
+  padding: 5px;
+  margin:5px 0 15px 0 ;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.success {
+  background: var(--hint);
+  color:var(--main);
+  
+}
+
+.error {
+  background: var(--secondary);
+  color:var(--hint);
+
+}
+
+.container {
+  margin-top: 20px;;
+}
+
+.container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent)
+}
+
+.subBtnCon {
+  text-align: center;
+  width:100%;
+  margin-top: 20px;
+}
+#submitBtn {
+  display: inline-block;
+  color: var(--main);
+ width:30%;
+ text-align:center;
+
+  background-color: var(--accent)
+}
+
